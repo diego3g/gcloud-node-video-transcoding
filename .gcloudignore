@@ -1,0 +1,5 @@
+# Exclude compiled .js files
+dist/
+
+# Exclude dependencies
+node_modules/

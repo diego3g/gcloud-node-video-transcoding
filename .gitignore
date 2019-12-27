@@ -1,0 +1,6 @@
+# Exclude compiled .js files
+dist/
+gcp-key.json
+
+# Exclude dependencies
+node_modules/

@@ -1,0 +1,20 @@
+{
+  "name": "jupiter-main",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "repo-tools test app -- index.js",
+    "dev": "sucrase-node ./src/index.ts",
+    "start": "node ./dist/index.js",
+    "build": "sucrase ./src -d ./dist --transforms typescript,imports",
+    "deploy": "gcloud app deploy app.yaml"
+  },
+  "dependencies": {
+    "@google-cloud/pubsub": "^1.2.0",
+    "sucrase": "^3.11.0"
+  },
+  "devDependencies": {
+    "@google-cloud/nodejs-repo-tools": "^3.3.0"
+  }
+}
