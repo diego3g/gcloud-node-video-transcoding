@@ -1,4 +1,6 @@
-![Diagrama](.github/assets/diagram.png)
+<h1 align="center">
+  <img src="https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/jupiter-transcode-diagram.png" />
+</h1>
 
 <h2 align="center">
   Google Cloud Node.js video transcoder
