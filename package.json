@@ -5,7 +5,8 @@
   "author": "Diego Fernandes <diego.schell.f@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "lerna exec -- yarn dev",
+    "dev:main": "lerna exec --scope jupiter-main -- yarn dev",
+    "dev:worker": "lerna exec --scope jupiter-worker -- yarn dev",
     "build": "lerna run build",
     "deploy": "lerna run deploy"
   },
