@@ -28,12 +28,12 @@ export default async function transcode(
     const originFile = originBucket.file(file.name);
     const originStream = originFile.createReadStream();
 
-    const destionationFile = file.name.replace(
+    const destinationFile = file.name.replace(
       '.mp4',
       `_${resolution.suffix}.mp4`
     );
     const destinationStream = destinationBucket
-      .file(destionationFile)
+      .file(destinationFile)
       .createWriteStream({
         metadata: {
           contentType: 'video/mp4',
